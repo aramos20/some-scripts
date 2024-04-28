@@ -1,4 +1,4 @@
-i#!/bin/bash
+#!/bin/bash
 
 # This checks if the number of arguments is correct
 # If the number of arguments is incorrect ( $# != 2) print error message and exit
@@ -25,7 +25,6 @@ echo "Second Command Line Argument (destinationDirectory): $destinationDirectory
 
 # [TASK 3]
 currentTS=$(date +%s)
-
 
 # [TASK 4]
 backupFileName="backup-${currentTS}.tar.gz"
@@ -85,5 +84,3 @@ tar -czvf "$backupFileName" "${toBackup[@]}"
 # Move the backup file to the destination directory
 mv "$backupFileName" "$destAbsPath"
 
-
-# Congratulations! You completed the final project for this course!
