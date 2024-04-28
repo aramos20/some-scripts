@@ -15,18 +15,14 @@ then
   exit
 fi
 
-# [TASK 1]
 targetDirectory=$1
 destinationDirectory=$2
 
-# [TASK 2]
 echo "First Command Line Argument (targetDirectory): $targetDirectory"
 echo "Second Command Line Argument (destinationDirectory): $destinationDirectory"
 
-# [TASK 3]
 currentTS=$(date +%s)
 
-# [TASK 4]
 backupFileName="backup-${currentTS}.tar.gz"
 
 # We're going to:
@@ -36,37 +32,29 @@ backupFileName="backup-${currentTS}.tar.gz"
 
 # To make things easier, we will define some useful variables...
 
-# [TASK 5]
 origAbsPath=$(pwd)
 
-# [TASK 6]
 cd "$destinationDirectory" || exit 1 # <-
 destAbsPath=$(pwd)
 
-# [TASK 7]
 cd "$origAbsPath" || exit 1 # <-
 cd "$targetDirectory" || exit 1 # <-
 
-# [TASK 8]
 # Calculate the timestamp 24 hours ago
 yesterdayTS=$((currentTS - 24 * 60 * 60))
 
 declare -a toBackup
 
-# [TASK 9]
 #for file in $(ls); do
     #echo "$file"
 #done
 
-  # [TASK 10]
 #for file in $(ls); do
     #file_last_modified_date=$(date -r "$file" +%s)
     #if ((file_last_modified_date > yesterdayTS)); then
         #echo "$file was modified within the last 24 hours"
     #fi
 #done
-
-    # [TASK 11]
 
 for file in $(ls); do
     file_last_modified_date=$(date -r "$file" +%s)
@@ -76,11 +64,9 @@ for file in $(ls); do
     fi
 done
 
-# [TASK 12]
 # Compress and archive the files listed in the toBackup array
 tar -czvf "$backupFileName" "${toBackup[@]}"
 
-# [TASK 13]
 # Move the backup file to the destination directory
 mv "$backupFileName" "$destAbsPath"
 
