@@ -1,5 +1,4 @@
-[![Linkedin](https://img.shields.io/badge/Linkedin-Follow%20Adrian-blue?logo=linkedin)](www.linkedin.com/in/adri%C3%A1nramos)
-
+[![Linkedin](https://img.shields.io/badge/Linkedin-Follow%20Adrian-blue?logo=linkedin)](https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=adri%C3%A1nramos)
 # Lab Scripts
 
 This repository contains a collection of scripts developed during various lab sessions. These scripts were created to automate tasks, demonstrate concepts, and facilitate learning in the respective labs. Each script is documented with comments to explain its purpose and usage.
