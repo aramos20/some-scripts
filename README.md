@@ -1,4 +1,4 @@
-[![Linkedin](https://img.shields.io/badge/Linkedin-Follow%20Adrian-blue?logo=linkedin)](www.linkedin.com/in/adriánramos)
+[![Linkedin](https://img.shields.io/badge/Linkedin-Follow%20Adrian-blue?logo=linkedin)](www.linkedin.com/in/adri%C3%A1nramos)
 
 # Lab Scripts
 
