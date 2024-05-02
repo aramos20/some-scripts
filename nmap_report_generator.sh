@@ -83,7 +83,6 @@ cat <<EOF
 </html>
 
 EOF
-
 }
 
 if [ $(find nmap_output.raw -mmin -30) ]; then
