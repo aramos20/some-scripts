@@ -7,6 +7,7 @@ This repository contains a collection of scripts developed during various lab se
 
 - **backup.sh:** Performs the task of creating a backup of files modified within the last 24 hours in a specified target directory and then moves the backup file to a specified destination directory.
 - **weather-forecast.sh:** This script downloads today's weather report for Casablanca, extracts temperature data, and appends relevant information to a log file, facilitating the tracking of observed and forecasted temperatures over time.
+- **nmap_report_generator.sh:** This script streamlines the process of conducting Nmap scans, extracting relevant information, and presenting it in a readable HTML format, enhancing the efficiency of network reconnaissance tasks.
 
 ## Usage
 
